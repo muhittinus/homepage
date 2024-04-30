@@ -10,6 +10,12 @@ a {
   text-decoration: none;
 }
 
+div.container,
+div.mx-auto,
+div.p-4 {
+  width: 60%;
+}
+
 .arama {
     width: 100%;
     display: block;
