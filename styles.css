@@ -10,12 +10,6 @@ a {
   text-decoration: none;
 }
 
-div.container-fluid,
-div.mx-auto,
-div.p-4 {
-  width: 800px;
-}
-
 .arama {
     width: 100%;
     display: block;
