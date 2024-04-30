@@ -59,7 +59,8 @@
       <br>
       <input type="search" name="q" class="arama form-control" id = "arama" placeholder="Search">
       <br>
-      <div class="btn-group arama" role="group">
+
+      <div class="btn-group arama" role="group" id="buttonGroup">
         <button type="button" class="btn btn-secondary" onclick="search('almaany')">Almaany</button>
         <button type="button" class="btn btn-secondary" onclick="search('almufradat')">Al-Mufradat</button>
         <button type="button" class="btn btn-secondary" onclick="search('qamus-al-muheet')">al-Muheet</button>
@@ -68,6 +69,7 @@
         <button type="button" class="btn btn-secondary" onclick="search('context')">See context</button>
         <button type="button" class="btn btn-secondary" onclick="search('translate')">Translate</button>
       </div>
+
 
       <br> <br>
       <p>Here is a list of arabic learning resources:</p>
@@ -209,6 +211,21 @@
           break;
         }
       }
+
+      function updateButtonGroup() {
+        var buttonGroup = document.getElementById('buttonGroup');
+        if (window.innerWidth <= 767) {
+          buttonGroup.classList.add('btn-group-vertical');
+          buttonGroup.classList.remove('btn-group');
+        } else {
+          buttonGroup.classList.remove('btn-group-vertical');
+          buttonGroup.classList.add('btn-group');
+        }
+      }
+  
+      // Call the function on page load and resize
+      window.onload = updateButtonGroup;
+      window.onresize = updateButtonGroup;
     </script>
   </body>
 </html>
