@@ -63,10 +63,8 @@
         <button type="button" class="btn btn-secondary" onclick="search('almaany')">Almaany</button>
         <button type="button" class="btn btn-secondary" onclick="search('almufradat')">Al-Mufradat</button>
         <button type="button" class="btn btn-secondary" onclick="search('qamus-al-muheet')">al-Muheet</button>
-        <button type="button" class="btn btn-secondary" onclick="search('doha')">Doha</button>
         <button type="button" class="btn btn-secondary" onclick="search('lsnarab')">Lisan al-Arab</button>
-
-        <button type="button" class="btn btn-secondary" onclick="search('riyadh')">al-Riyadh</button>
+        <button type="button" class="btn btn-secondary" onclick="search('doha')">Riyadh</button>
         <button type="button" class="btn btn-secondary" onclick="search('context')">See context</button>
         <button type="button" class="btn btn-secondary" onclick="search('context')">Translate</button>
       </div>
@@ -89,6 +87,12 @@
         >Hawramani Lexicon</a
       >
       <br>
+
+      <a href="https://www.dohadictionary.org/dictionary" target="_blank"
+        >Doha Dictionary</a
+      >
+      <br>
+      
       <br>
 
       <h5><strong>Others</strong></h5>
@@ -169,13 +173,6 @@
             );
             break;
 
-          case "doha":
-            window.open(
-              "https://www.dohadictionary.org/dictionary/" +
-                document.getElementById("arama").value,
-              "_blank"
-            );
-            break;
 
           case "riyadh":
             window.open(
