@@ -25,7 +25,10 @@ div.p-4 {
   div.container,
   div.mx-auto,
   div.p-4 {
-    width: 80%;
+    width: 100%;
 }
+  div.btn-group-vertical {
+    width: 40%;
+  }
 }
 
