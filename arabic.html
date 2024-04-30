@@ -224,7 +224,7 @@
       }
 
       function keypress(event) {
-        if (event.key === 'Enter')
+        if (event.key === 'Enter' && (document.getElementById('arama').value != ''))
         {
           event.preventDefault();
           search('translate');
