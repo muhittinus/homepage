@@ -20,4 +20,12 @@ div.p-4 {
   margin-right: auto;
 }
 
+@media (max-width: 767px)
+{
+  div.container,
+  div.mx-auto,
+  div.p-4 {
+    width: 80%;
+}
+}
 
