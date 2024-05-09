@@ -68,6 +68,7 @@
         <button type="button" class="btn btn-secondary" onclick="search('doha')">Riyadh</button>
         <button type="button" class="btn btn-secondary" onclick="search('context')">See context</button>
         <button type="button" class="btn btn-secondary" onclick="search('translate')">Translate</button>
+        <button type="button" class="btn btn-secondary" onclick="search('lexi')">LexiQamus</button>
       </div>
 
 
@@ -98,6 +99,12 @@
       <br>
 
       <h5><strong>Others</strong></h5>
+      <a
+        href="https://www.livingarabic.com/"
+        target="_blank"
+        >The Living Arabic Project</a
+      >
+      <br>
       <a href="https://revivearabic.blogspot.com/" target="_blank"
         >Revive Arabic</a
       >
@@ -206,6 +213,14 @@
             "https://translate.google.com/?sl=ar&tl=en&text=" +
               document.getElementById("arama").value +
               "&op=translate",
+            "_blank"
+          );
+          break;
+
+          case "lexi":
+          window.open(
+            "https://www.lexiqamus.com/en?search_type=input&_word=" +
+              document.getElementById("arama").value,
             "_blank"
           );
           break;
